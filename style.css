@@ -13,15 +13,19 @@
   left: 0;
   top: 0;
   height: 100%;
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
-/*.section-right {
+.section-right {
   float: right;
   top: 0;
   right: 0;
   height: 100%;
-  width: 45%;
-}*/
+  width: 50%;
+  display: inline-block;
+}
 .pull-right{
   padding: 0;
 }
