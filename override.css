@@ -1,0 +1,25 @@
+/*.scrollmagic-pin-spacer {
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+  margin: 0px;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+section {
+  position: relative;
+  margin: auto;
+  top: 0px;
+  bottom: auto;
+  right: auto;
+  box-sizing: border-box;
+  height: 706px;
+  width: 50%;
+}*/
+
