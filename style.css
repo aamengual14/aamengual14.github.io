@@ -43,7 +43,9 @@ p {
 }
 
 h1#greeting {
-  padding-top: 20%;
+  padding-top: 7%;
+  padding-right: 45%;
+  padding-bottom: 5%;
 }
 
 h1#about{
@@ -52,6 +54,12 @@ h1#about{
 
 #about-me {
   padding-top: 15%;
+}
+
+#open-para {
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 35px;
 }
 
 
@@ -351,7 +359,7 @@ p#about-me{
 }
 
 .bounce {
-  margin-top: 27%;
+  margin-top: 18%;
 }
 
 .bounce:hover {
