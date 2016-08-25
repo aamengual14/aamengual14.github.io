@@ -2,19 +2,24 @@
 (function($) {
 
   $(window).bind('resize', function(e)
-{
-  if (window.RT) clearTimeout(window.RT);
-  window.RT = setTimeout(function()
   {
-    this.location.reload(false); /* false to get page from cache */
-  }, 100);
-});
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 100);
+  });
+
+
+// $('#myModal').on('shown.bs.modal', function () {
+//   $('#myInput').focus()
+// })
 
     // Init ScrollMagic
     var ctrl = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave'
-        }
+      globalSceneOptions: {
+        triggerHook: 'onLeave'
+      }
     });
 
     ctrl.scrollTo(function(target) {
@@ -28,11 +33,11 @@
       });
     });
 
-  $(document).on("click", "a[href^=#]", function(e) {
-    var id = $(this).attr("href");
+    $(document).on("click", "a[href^=#]", function(e) {
+      var id = $(this).attr("href");
 
-    if($(id).length > 0) {
-      e.preventDefault();
+      if($(id).length > 0) {
+        e.preventDefault();
 
       // trigger scroll
       ctrl.scrollTo(id);
@@ -49,7 +54,7 @@
   $("section").each(function() {
 
     new ScrollMagic.Scene({
-        triggerElement: this
+      triggerElement: this
     })
     .setPin(this)
     .addTo(ctrl);

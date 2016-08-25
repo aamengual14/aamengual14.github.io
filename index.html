@@ -4,11 +4,11 @@
     <title> Alfredo Amengual | Developer | Portfolio </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- -->    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
-    <script src="https://use.fontawesome.com/2c06b0ed41.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='style.css'/>
-    <link rel='stylesheet' href='override.css'/>
   </head>
   <body>
     <div class="container-fluid">
@@ -20,9 +20,9 @@
             <div class="container-fluid">
               <ul class="nav navbar-nav nav-pills pull-right">
                 <li role="presentation"><a href="#one">Home</a></li>
-                <li role="presentation"><a href="#two">About</a></li>
+                <li role="presentation"><a href="#two">Projects</a></li>
                 <li role="presentation"><a href="#three">Skills</a></li>
-                <li role="presentation"><a href="#four">Portfolio</a></li>
+                <li role="presentation"><a href="#four">About</a></li>
                 <li role="presentation"><a href="#five">Contact</a></li>
               </ul>
             </div>
@@ -39,46 +39,48 @@
           </section>
           <section id="two" class="slides">
           <div class="inner projects">
+
               <div class="image-border">
                 <img class="project-image" src="chatbot.png">
-                <ul class="float">
-                  <li> test </li>
-                  <li> more details more details </li>
+                <ul class="float animated slideInRight">
+                  <li> My Chatbot </li>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                    <li> View Project Details </li>
+                  </button>
                 </ul>
-
               </div>
+
               <div class="image-border">
-<!--                 <h3> Build-a-Date </h3>
- -->                <img class="project-image" src="date.png">
-                 <ul class="float">
-                  <li> test </li>
-                  <li> more details more details </li>
-                </ul>
-
+                <img class="project-image" src="date.png">
+                 <ul class="float animated slideInRight">
+                  <li> Build-a-Date </li>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                    <li> View Project Details </li>
+                  </button>
+                 </ul>
               </div>
+
               <div class="image-border">
-<!--                 <h3> Nativ </h3>
- -->                <img class="project-image" src="nativ.png">
-                 <ul class="float">
-                  <li> test </li>
-                  <li> more details more details </li>
+                <img class="project-image" src="nativ.png">
+                <ul class="float animated slideInRight">
+                  <li> Nativ </li>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                    <li> View Project Details </li>
+                  </button>
                 </ul>
-
               </div>
+
               <div class="image-border">
-<!--                 <h3> CodeConnect.us </h3>
- -->                <img class="project-image" src="codeconnect.png">
-                 <ul class="float">
-                  <li> test </li>
-                  <li> more details more details </li>
+                <img class="project-image" src="codeconnect.png">
+                <ul class="float animated slideInRight">
+                  <li> CodeConnect.us </li>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+                    <li> View Project Details </li>
+                  </button>
                 </ul>
-
-
               </div>
-              <!-- <p class="project-description">
-                Full stack web application built using Node.js, Express, and MongoDB. 1st group project at General Assembly built over the course of 5 days. The app brings together developers and  students who are interested in learning to code through tutoring.
-              </p> -->
             </div>
+
           </section>
           <section id="three" class="slides">
             <div class="inner skills" id="skills">
@@ -147,8 +149,83 @@
 
       </div>
 
+
+      <!-- modal 1-->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">My Chatbot</h4>
+                      </div>
+                    <div class="modal-body">
+                       <h1> Details </h1>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- modal 1-->
+<!-- modal 2-->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Build-a-Date</h4>
+                      </div>
+                    <div class="modal-body">
+                       <h1> Details </h1>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- modal 2-->
+<!-- modal 3-->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Nativ</h4>
+                      </div>
+                    <div class="modal-body">
+                       <h1> Details </h1>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- modal 3-->
+<!-- modal 4-->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">CodeConnect.us</h4>
+                      </div>
+                    <div class="modal-body">
+                       <h1> Details </h1>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- modal 4-->
+
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/2c06b0ed41.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
