@@ -55,8 +55,11 @@
 }
 
 .project-image {
-  height: 100px;
-}
+  height: 130px;
+  border-radius: 5px;
+  border: 2px solid #373737;
+/*  margin-right: 40%;
+*/}
 
 .project-description {
   font-size: 1em;
@@ -340,6 +343,15 @@ p#about-me{
 .arrow:visited {
   color:#C0B283;
   text-decoration: none;
+}
+
+.image-border {
+/*  margin-right: 60%;
+*/  margin-top: 15px;
+}
+
+.float {
+  float: right;
 }
 
 
