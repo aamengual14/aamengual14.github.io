@@ -157,14 +157,15 @@ span #c10:hover {
   background-color: white;
   text-decoration: none;
   color: #272b30;
-  visibility: visible;
+  opacity: 0.9;
 }
 
 
 
 
 .nav-content {
-  visibility: hidden;
+  color: #272b30;
+  opacity: 0.0;
 }
 
 
@@ -297,9 +298,18 @@ h3.panel-title{
 
 #email {
   font-size: 40px;
+  color: #373737;
+}
+#email:hover {
+  cursor: pointer;
+  color: blue;
 }
 
 .fa {
+  color: #373737;
+}
+.fa:hover {
+  cursor: pointer;
   color: blue;
 }
 
@@ -383,29 +393,43 @@ section#four{
   background-color: #F4F4F4;
 }
 section#five{
-  background-color: #272b30 ;
+  background-color: #F4F4F4;
   font-size: 5em;
 
 }
 
 p#language{
   color:#373737;
+  font-size: 15px;
 }
 p#server{
   color:#373737;
+  font-size: 15px;
+
 }
 p#database{
   color:#373737;
+  font-size: 15px;
+
 }
 p#client{
   color:#373737;
+  font-size: 15px;
+
 }
 p#version{
   color:#373737;
+  font-size: 15px;
+
 }
 p#about-me{
   color:#373737;
+  font-size: 15px;
 }
+
+
+
+/* media */
 
 @media (max-width: 750px) {
   .section-left {
@@ -419,13 +443,82 @@ p#about-me{
     width: 100%;
     display: block;
   }
-/*  .container-fluid {
-    padding: 0px 0px;
+  #email {
+    font-size: 25px;
   }
-  .navbar-fixed-top {
-     left: 0%;
-     padding-right: 8%;
-    }*/
+  #skills {
+    padding-top: 30px;
+  }
+  .float {
+    float: none;
+    margin-right: 50%;
+  }
+  .image-border {
+    display: inline-block;
+  }
+  .project-image {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+    .section-left {
+    float: none;
+    width: 100%;
+    display: block;
+    position: static;
+  }
+  .section-right {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  #email {
+    font-size: 25px;
+  }
+  #skills {
+    padding-top: 30px;
+  }
+  .float {
+    float: none;
+    margin-right: 50%;
+  }
+  .image-border {
+    display: inline-block;
+  }
+  .project-image {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .section-left {
+    float: none;
+    width: 100%;
+    display: block;
+    position: static;
+  }
+  .section-right {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  #email {
+    font-size: 25px;
+  }
+  #skills {
+    padding-top: 30px;
+  }
+  .float {
+    float: none;
+    margin-right: 50%;
+  }
+  .image-border {
+    display: inline-block;
+  }
+  .project-image {
+    margin-left: 10%;
+  }
 }
 
 
