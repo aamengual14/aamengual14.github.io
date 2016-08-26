@@ -151,19 +151,20 @@ span #c10:hover {
   text-align: right;
 }
 
-.sidenav li:hover {
+.sidenav:hover li:hover, .nav-content:hover {
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
   text-decoration: none;
+  color: #272b30;
+  visibility: visible;
 }
 
 
 
 
-
 .nav-content {
-  color: #272b30;
+  visibility: hidden;
 }
 
 
@@ -446,6 +447,7 @@ p#about-me{
 
 .bounce {
   margin-top: 27%;
+  text-align: center;
 }
 
 .bounce:hover {
