@@ -184,8 +184,9 @@ span #c10:hover {
   height: 130px;
   border-radius: 5px;
   border: 2px solid #373737;
-/*  margin-right: 40%;
-*/}
+  margin-left: 15%;
+  margin-bottom: 15px;
+}
 
 .project-description {
   font-size: 1em;
@@ -359,7 +360,7 @@ section {
 
 section .inner {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 100%;
 }
 
 
@@ -468,9 +469,16 @@ p#about-me{
 
 .image-border {
 /*  margin-right: 60%;
-*/  margin-top: 15px;
+*/  padding-top: 15px;
     padding-left: 0px;
     display: inline-flex;
+    border-bottom: 1px solid black;
+    width: 700px;
+}
+
+.image-border:hover {
+  cursor: pointer;
+  background-color:rgba(0, 0, 0, 0.1);
 }
 
 .float {
@@ -484,8 +492,13 @@ p#about-me{
 .float p {
   font-size: 20px;
   margin-top: 2%;
+  padding-left: 60px;
 }
 
+
+.project-unique {
+  padding-left: 0%;
+}
 
 
 
