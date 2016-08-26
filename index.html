@@ -4,6 +4,7 @@
     <title> Alfredo Amengual | Developer | Portfolio </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <script src="https://use.fontawesome.com/2c06b0ed41.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
@@ -11,240 +12,215 @@
     <link rel='stylesheet' href='style.css'/>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="section-left">
+    <div class="section-left">
+    </div>
+    <div class="section-right">
+    <div class="sidenav">
+      <ul>
+        <li role="presentation"><a href="#one"><span class="nav-content">Home </span><i class="fa fa-circle-o" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#two"><span class="nav-content">Projects </span><i class="fa fa-circle-o" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#three"><span class="nav-content">Skills </span><i class="fa fa-circle-o" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#four"><span class="nav-content">About </span><i class="fa fa-circle-o" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#five"><span class="nav-content">Contact </span><i class="fa fa-circle-o" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+      <section id="one" class="slides">
+        <div class=“inner”>
+          <h1 id="greeting">Hello,</h1>
+          <p id="open-para"> I'm a freshly minted full stack developer with a keen interest in building smart software, learning any new technologies I can get my hands on, and playing Google detective to understand why things work the way they do. I love collaborating and being a part of new idea, so lets talk. </p>
+        <div class="bounce">
+          <a href="#two" class="arrow"> SEE WHATS NEW BELOW </a>
         </div>
-        <div class="section-right">
-          <div class="navbar navbar-defaut navbar-fixed-top">
-            <div class="container-fluid">
-              <ul class="nav navbar-nav nav-pills pull-right">
-                <li role="presentation"><a href="#one">Home</a></li>
-                <li role="presentation"><a href="#two">Projects</a></li>
-                <li role="presentation"><a href="#three">Skills</a></li>
-                <li role="presentation"><a href="#four">About</a></li>
-                <li role="presentation"><a href="#five">Contact</a></li>
-              </ul>
+        </div>
+      </section>
+      <section id="two" class="slides">
+        <div class="inner projects">
+          <div class="image-border">
+            <img class="project-image" src="chatbot.png">
+            <ul class="float animated slideInRight">
+              <li> My Chatbot </li>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                <li> View Project Details </li>
+              </button>
+            </ul>
+          </div>
+          <div class="image-border">
+            <img class="project-image" src="date.png">
+            <ul class="float animated slideInRight">
+              <li> Build-a-Date </li>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                <li> View Project Details </li>
+              </button>
+            </ul>
+          </div>
+          <div class="image-border">
+            <img class="project-image" src="nativ.png">
+            <ul class="float animated slideInRight">
+              <li> Nativ </li>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                <li> View Project Details </li>
+              </button>
+            </ul>
+          </div>
+          <div class="image-border">
+            <img class="project-image" src="codeconnect.png">
+            <ul class="float animated slideInRight">
+              <li> CodeConnect.us </li>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+                  <li> View Project Details </li>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="three" class="slides">
+        <div class="inner skills" id="skills">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Languages</h3>
+            </div>
+            <div class="panel-body">
+              <p id="language"> Javascript Ruby SQL HTML CSS </p>
             </div>
           </div>
-
-          <section id="one" class="slides">
-            <div class=“inner”>
-              <h1 id="greeting">Hello,</h1>
-              <p id="open-para"> I'm a freshly minted full stack developer with a keen interest in building smart software, learning any new technologies I can get my hands on, and playing Google detective to understand why things work the way they do. I love collaborating and being a part of new idea, so lets talk. </h3>
-              <div class="bounce">
-                <a href="#two" class="arrow"> SEE WHATS NEW BELOW </a>
-              </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Server</h3>
             </div>
-          </section>
-          <section id="two" class="slides">
-          <div class="inner projects">
-
-              <div class="image-border">
-                <img class="project-image" src="chatbot.png">
-                <ul class="float animated slideInRight">
-                  <li> My Chatbot </li>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
-                    <li> View Project Details </li>
-                  </button>
-                </ul>
-              </div>
-
-              <div class="image-border">
-                <img class="project-image" src="date.png">
-                 <ul class="float animated slideInRight">
-                  <li> Build-a-Date </li>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
-                    <li> View Project Details </li>
-                  </button>
-                 </ul>
-              </div>
-
-              <div class="image-border">
-                <img class="project-image" src="nativ.png">
-                <ul class="float animated slideInRight">
-                  <li> Nativ </li>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
-                    <li> View Project Details </li>
-                  </button>
-                </ul>
-              </div>
-
-              <div class="image-border">
-                <img class="project-image" src="codeconnect.png">
-                <ul class="float animated slideInRight">
-                  <li> CodeConnect.us </li>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
-                    <li> View Project Details </li>
-                  </button>
-                </ul>
-              </div>
+            <div class="panel-body">
+              <p id="server"> Node.js Express Ruby on Rails</p>
             </div>
-
-          </section>
-          <section id="three" class="slides">
-            <div class="inner skills" id="skills">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Languages</h3>
-                </div>
-                <div class="panel-body">
-                  <p id="language"> Javascript Ruby SQL HTML CSS </p>
-                </div>
-               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Server</h3>
-                </div>
-                <div class="panel-body">
-                  <p id="server"> Node.js Express Ruby on Rails</p>
-                </div>
-               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Database</h3>
-                </div>
-                <div class="panel-body">
-                  <p id="database"> MongoDB Mongoose Active Records</p>
-                </div>
-               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Client Side</h3>
-                </div>
-                <div class="panel-body">
-                  <p id="client"> React Bootstrap jQuery Angular AJAX </p>
-                </div>
-               </div>
-               <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Version Control</h3>
-                </div>
-                <div class="panel-body">
-                  <p id="version"> Github Git </p>
-                </div>
-               </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Database</h3>
             </div>
-          </section>
-          <section id="four" class="slides">
-                      <div class="inner">
-<!--               <h1 id="about">The Deets</h1>
- -->              <p id="about-me"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="panel-body">
+              <p id="database"> MongoDB Mongoose Active Records</p>
             </div>
-
-          </section>
-          <section id="five" class="slides">
-            <div class="inner">
-              <div id="contact">
-                <a href="#"><h3 id="email"> amengual.alfredo@gmail.com </h3></a>
-                <a href="https://github.com/aamengual14"><i class="fa fa-github contact-slide" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/aamengual"><i class="fa fa-linkedin contact-slide" aria-hidden="true"></i></a>
-                <a href="https://medium.com/@aamengual14"><i class="fa fa-medium contact-slide" aria-hidden="true"></i></a>
-              </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Client Side</h3>
             </div>
-          </section>
-
-
+            <div class="panel-body">
+              <p id="client"> React Bootstrap jQuery Angular AJAX </p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Version Control</h3>
+            </div>
+            <div class="panel-body">
+              <p id="version"> Github Git </p>
+            </div>
+          </div>
         </div>
-
-      </div>
-
-
-      <!-- modal 1-->
-                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">My Chatbot</h4>
-                      </div>
-                    <div class="modal-body">
-                       <ul class="project-modal">
-                        <li>Technologies Used: Node.js, Express, MongoDB, jQuery, AJAX, API.ai, Chrome Web Speech, HTML5 Webkit Speech Recognition </li>
-                        <li>Current Features: general small talk with the bot, adding and deleting tasks through spoken command and for the bot to categorize by priority</li>
-                        <li>On Deck: beer suggesting, movie suggesting, weather retrieval </li>
-                        <a href="https://thawing-bayou-23300.herokuapp.com/"><li>Live Demo</li></a>
-                        <a href="https://github.com/aamengual14/chatbot"><li>Github</li></a>
-                       </ul>
-                    </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<!-- modal 1-->
-<!-- modal 2-->
-                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Build-a-Date</h4>
-                      </div>
-                    <div class="modal-body">
-                      <ul class="project-modal">
-                        <li>Technologies Used: React, Node.js, Express, and Firebase. Yelp, Spotify, Weather Underground APIs </li>
-                        <li>Description: Users are able to search for date ideas, weather for the week, and listen to music while building potential date ideas with partner</li>
-                        <a href="https://intense-ravine-90857.herokuapp.com/"><li>Live Demo</li></a>
-                        <a href="https://github.com/aamengual14/build-a-date"><li>Github</li></a>
-                      </ul>
-                    </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<!-- modal 2-->
-<!-- modal 3-->
-                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Nativ</h4>
-                      </div>
-                    <div class="modal-body">
-                      <ul class="project-modal">
-                        <li>Technologies Used: Node.js and Express utilizing WayBlazer Accommodation AI API </li>
-                        <li>Description: The app uses data-focused imagery to provide a simple hotel booking experience that accurately matches hotels with users based on their interests. </li>
-                        <a href="https://github.com/rpreilley/wayblazerhackathon"><li>Github</li></a>
-                      </ul>
-                    </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<!-- modal 3-->
-<!-- modal 4-->
-                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">CodeConnect.us</h4>
-                      </div>
-                    <div class="modal-body">
-                      <ul class="project-modal">
-                        <li>Technologies Used: Node.js, Express, and MongoDB </li>
-                        <li>Description: The app brings together developers and students who are interested in learning to code through tutoring.</li>
-                        <a href="http://codeconnect-us.herokuapp.com/"><li>Live Demo</li></a>
-                        <a href="https://github.com/lilixiaoxx/project2"><li>Github</li></a>
-                      </ul>                   </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<!-- modal 4-->
-
-
+      </section>
+      <section id="four" class="slides">
+        <div class="inner">
+          <p id="about-me">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </section>
+      <section id="five" class="slides">
+        <div class="inner">
+          <div id="contact">
+            <a href="#"><h3 id="email"> amengual.alfredo@gmail.com </h3></a>
+            <a href="#"><i class="fa fa-github contact-slide" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin contact-slide" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-medium contact-slide" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
     </div>
-    <script src="https://use.fontawesome.com/2c06b0ed41.js"></script>
+<!-- modal1-->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">My Chatbot</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="project-modal">
+              <li>Technologies Used: Node.js, Express, MongoDB, jQuery, AJAX, API.ai, Chrome Web Speech, HTML5 Webkit Speech Recognition </li>
+              <li>Current Features: general small talk with the bot, adding and deleting tasks through spoken command and for the bot to categorize by priority</li>
+              <li>On Deck: beer suggesting, movie suggesting, weather retrieval </li>
+              <a href="https://thawing-bayou-23300.herokuapp.com/"><li>Live Demo</li></a>
+              <a href="https://github.com/aamengual14/chatbot"><li>Github</li></a>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- modal2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Build-a-Date</h4>
+          </div>
+        <div class="modal-body">
+          <ul class="project-modal">
+            <li>Technologies Used: React, Node.js, Express, and Firebase. Yelp, Spotify, Weather Underground APIs </li>
+            <li>Description: Users are able to search for date ideas, weather for the week, and listen to music while building potential date ideas with partner</li>
+            <a href="https://intense-ravine-90857.herokuapp.com/"><li>Live Demo</li></a>
+            <a href="https://github.com/aamengual14/build-a-date"><li>Github</li></a>
+          </ul>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- modal3 -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Nativ</h4>
+          </div>
+        <div class="modal-body">
+          <ul class="project-modal">
+            <li>Technologies Used: Node.js and Express utilizing WayBlazer Accommodation AI API </li>
+            <li>Description: The app uses data-focused imagery to provide a simple hotel booking experience that accurately matches hotels with users based on their interests. </li>
+            <a href="https://github.com/rpreilley/wayblazerhackathon"><li>Github</li></a>
+          </ul>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- modal4 -->
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">CodeConnect.us</h4>
+          </div>
+        <div class="modal-body">
+          <ul class="project-modal">
+            <li>Technologies Used: Node.js, Express, and MongoDB </li>
+            <li>Description: The app brings together developers and students who are interested in learning to code through tutoring.</li>
+            <a href="http://codeconnect-us.herokuapp.com/"><li>Live Demo</li></a>
+            <a href="https://github.com/lilixiaoxx/project2"><li>Github</li></a>
+          </ul>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
