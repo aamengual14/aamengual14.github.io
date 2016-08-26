@@ -181,6 +181,7 @@ span #c10:hover {
 .projects {
   padding-top: 50px;
   color: #373737;
+  padding-right: 25%;
 }
 
 .project-image {
@@ -349,7 +350,6 @@ section {
 /*    width: 50%;
 */    color: white;
     position: relative;
-    text-align: center;
 }
     /* Center the content of the sections */
 /*section .inner {
@@ -473,11 +473,13 @@ p#about-me{
 .image-border {
 /*  margin-right: 60%;
 */  margin-top: 15px;
+    padding-left: 0px;
 }
 
 .float {
   float: right;
   list-style-type: none;
+  font-size: 15px;
 }
 
 
