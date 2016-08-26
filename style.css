@@ -96,10 +96,6 @@ h1#about{
 }
 #c10{
   color:#0AFAF2;
-  border: 1px solid black;
-  background-color: black;
-  border-radius: 10px;
-  margin-left: 3px;
 }
 span #c10:hover {
   text-decoration: none;
@@ -474,13 +470,23 @@ p#about-me{
 /*  margin-right: 60%;
 */  margin-top: 15px;
     padding-left: 0px;
+    display: inline-flex;
 }
 
 .float {
   float: right;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 40px;
 }
+
+.float p {
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+
 
 
 
