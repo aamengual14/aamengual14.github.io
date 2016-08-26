@@ -60,7 +60,53 @@ h1#about{
     padding-right: 10%;
     padding-left: 10%;
     line-height: 35px;
+    margin-top: 10%;
+    font-style: italic;
+/*    background: -webkit-linear-gradient(#ff4b1f, #1fddff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
 }
+
+#c1 {
+  color:#F97E01;
+}
+#c2 {
+  color:#E18A19;
+}
+#c3 {
+  color:#C99631;
+}
+#c4 {
+  color:#B1A349;
+}
+#c5 {
+  color:#99AF61;
+}
+#c6 {
+  color:#69C891;
+}
+#c7 {
+  color:#51D4A9;
+}
+#c8{
+  color:#39E1C1;
+}
+#c9{
+  color:#21EDD9;
+}
+#c10{
+  color:#0AFAF2;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 10px;
+}
+#c10 a {
+  text-decoration: none;
+}
+#c10>a:hover, #c10 a:active, #c10 a:visited  {
+  text-decoration: none;
+}
+
 
 
 
@@ -109,9 +155,9 @@ h1#about{
 }
 
 .sidenav li:hover {
-  border: 1px solid #F4F4F4;
+  border: 1px solid white;
   border-radius: 10px;
-  background-color: #F4F4F4;
+  background-color: white;
   text-decoration: none;
 }
 
@@ -401,7 +447,7 @@ p#about-me{
 }
 
 .bounce {
-  margin-top: 18%;
+  margin-top: 35%;
 }
 
 .bounce:hover {
