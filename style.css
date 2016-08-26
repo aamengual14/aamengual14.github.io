@@ -60,7 +60,7 @@ h1#about{
     padding-right: 10%;
     padding-left: 10%;
     line-height: 35px;
-    margin-top: 10%;
+    margin-top: 13%;
     font-style: italic;
 /*    background: -webkit-linear-gradient(#ff4b1f, #1fddff);
     -webkit-background-clip: text;
@@ -99,13 +99,14 @@ h1#about{
   border: 1px solid black;
   background-color: black;
   border-radius: 10px;
+  margin-left: 3px;
 }
-#c10 a {
+span #c10:hover {
   text-decoration: none;
 }
-#c10>a:hover, #c10 a:active, #c10 a:visited  {
+/*#c10>a:hover, #c10 a:active, #c10 a:visited  {
   text-decoration: none;
-}
+}*/
 
 
 
@@ -447,7 +448,7 @@ p#about-me{
 }
 
 .bounce {
-  margin-top: 35%;
+  margin-top: 27%;
 }
 
 .bounce:hover {
